@@ -1,0 +1,499 @@
+@font-face{
+	font-family: "Base4";
+	src: url('../material/fonts/base4.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.fullscreen-bg{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: -100;
+}
+
+.fullscreen-bg_video {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: ;
+}
+
+#leftSection{
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+    
+    position: fixed;
+    height: 100%;
+}
+
+#rightSection{
+    position: fixed;
+    left: 60%;
+}
+
+.itemSlots {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin-left: 90px;
+    margin-top: 410px;
+}
+
+.stigma_bg{
+    position: fixed;
+    height: 315px;
+    width: 401px;
+    background-image: url(../material/images/Stigma_BGs/stigma_bg_v2.png);
+    left: 0;
+    right: 0;
+    margin-top: 70px;
+    margin-left: 250px;
+}
+
+.stigma_slot{
+    height: 78px;
+    width: 82px;
+}
+
+#green_1{
+    position: absolute;
+    top: 189px;
+    right: 63px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -83px -79px;
+}
+
+#green_2{
+    position: absolute;
+    bottom: 3px;
+    left: 162px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -83px -79px;
+}
+
+#green_3{
+    position: absolute;
+    top: 190px;
+    left: 66px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -83px -79px;
+}
+
+#blue_1{
+    position: absolute;
+    top: 80px;
+    right: 55px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -166px -79px;
+}
+
+#blue_2{
+    position: absolute;
+    top: 80px;
+    left: 54px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -166px -79px;
+}
+
+#gold_1{
+    position: absolute;
+    top: 11px;
+    left: 162px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png);
+    background-position: -249px -79px;
+}
+
+#vision{
+    position: absolute;
+    top: 120px;
+    left: 165px;
+    background: url(../material/images/Stigma_BGs/stigma_slot.png)
+                -354px -23px;
+}
+
+.stigma{
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0.7;
+    transition: all 0.1s ease;
+}
+
+.stigma:hover {
+    opacity: 1;
+}
+
+
+
+#green_1_stigma{
+    background: url(../material/images/Stigmas/cbt_kn_divinepower_g1.jpg);
+    margin-left: 22.5px;
+    margin-top: 21px;    
+}
+
+#green_2_stigma{
+    background: url(../material/images/Stigmas/kn_executionalstrike_g1.jpg);
+    margin-left: 22px;
+    margin-top: 21px;    
+}
+
+#green_3_stigma{
+    background: url(../material/images/Stigmas/live_kn_thunderblade_g1.jpg);
+    margin-left: 22px;
+    margin-top: 20.5px;   
+}
+
+#blue_1_stigma{
+    background: url(../material/images/Stigmas/live_kn_recover_g1.jpg);
+    margin-left: 22px;
+    margin-top: 20px;   
+}
+
+#blue_2_stigma{
+    background: url(../material/images/Stigmas/live_kn_sentinel_g1.jpg);
+    margin-left: 22px;
+    margin-top: 20px;   
+}
+
+#gold_1_stigma{
+    background: url(../material/images/Stigmas/live_kn_invinsibleprotect_g1.jpg);
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+#vision_stigma{
+    background: url(../material/images/Stigmas/kn_godpunishment_g1.jpg);
+    margin-left: 19px;
+    margin-top: 19px;   
+}
+
+.stigma_info{
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    left: 0;
+    right: 0;
+    margin-left: 650px;
+    margin-top: 90px;
+    background-color: #696969;
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+
+#gold_info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/live_kn_invinsibleprotect_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#vision_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/kn_godpunishment_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#blue2_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/live_kn_sentinel_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#blue1_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/live_kn_recover_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#green3_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/live_kn_thunderblade_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#green2_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/kn_executionalstrike_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+#green1_info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Stigmas/cbt_kn_divinepower_g1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    display: none;
+}
+
+.stigma_info h4{
+    margin-left: 60px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+
+.stigma_info table{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.stigma_info td{
+    font-size: 11px;
+}
+
+.stigma_info th{
+    font-size: 12px;
+}
+
+.itemSlots #head_left {
+    text-align: left;
+}
+
+.itemSlots #head_right {
+    text-align: right;
+}
+
+.itemSlots span {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.itemSlots .armor {
+    margin-left: 10px;
+    color: purple;
+}
+
+.itemSlots .accs {
+    float: right;
+    margin-right: 10px;
+    color: purple;
+}
+
+.itemSlots td {
+    opacity: 0.8;
+}
+
+.itemSlots img {
+    box-shadow: 3px 3px 10px;
+}
+
+.itemSlots table {
+    background-image: url(../material/images/Gear/templarClass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemSlots td:hover {
+    opacity: 1;
+}
+
+.gear_info {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 350px;
+    overflow: hidden;
+    display: none;
+}
+
+.info {
+    position: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px;
+    display: none;
+}
+
+#weapon_info {
+    margin-top: -110px;
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/weaponInfo/greatsword_info.png);
+    background-repeat: no-repeat;
+}
+
+#torso_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/armorInfo/breastplate_info.png);
+    background-repeat: no-repeat;
+}
+
+#pants_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/armorInfo/greaves_info.png);
+    background-repeat: no-repeat;
+}
+
+#shoulder_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/armorInfo/shoulder_info.png);
+    background-repeat: no-repeat;
+}
+
+#glove_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/armorInfo/gloves_info.png);
+    background-repeat: no-repeat;
+}
+
+#shoes_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/armorInfo/sabatons_info.png);
+    background-repeat: no-repeat;
+}
+
+#wings_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/accInfo/wings_info.png);
+    background-repeat: no-repeat;
+}
+
+#feather_info {
+    width: 100%;
+    height: 100%;
+    background: url(../material/images/Gear/accInfo/feather_info.png);
+    background-repeat: no-repeat;
+}
+
+#head_info {
+    width: 373px;
+    height: 362px;
+    background: url(../material/images/Gear/accInfo/helmet_info.png);
+    background-repeat: no-repeat;
+}
+
+#necklace_info {
+    width: 373px;
+    height: 362px;
+    background: url(../material/images/Gear/accInfo/necklace_info.png);
+}
+
+#earring_info {
+    width: 373px;
+    height: 362px;
+    background: url(../material/images/Gear/accInfo/earring_info.png);
+}
+
+#ring_info {
+    width: 373px;
+    height: 362px;
+    background: url(../material/images/Gear/accInfo/ring_info.png);
+}
+
+#belt_info {
+    width: 373px;
+    height: 362px;
+    background: url(../material/images/Gear/accInfo/belt_info.png);
+}
+
+#bracelet_info {
+    width: 373px;
+    height: 177px;
+    background: url(../material/images/Gear/accInfo/bracelet_info.png);
+}
+
+.gear_info h4{
+    margin-left: 60px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.gearSpan {
+    margin-left: 10px;
+}
+
+.disc {
+    font-size: 11px;
+}
+
+.head {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#head_left {
+    color: white;
+}
+
+#head_right {
+    color: white;
+}
+
+#headline {
+    position: fixed;
+    font-family: Base4;
+    color: white;
+    margin-left: 1100px;
+    margin-top: 200px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.footer p {
+    float: right;
+}
+

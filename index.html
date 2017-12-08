@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Character Info</title>
+
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <script src="js/main.js"></script>
+        
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
+        
+
+    </head>
+    
+    <body>
+        <div class='wrapper row'>
+            
+            <div class='headline' id='headline'>
+                <h1>Lutetias <small>EU Loki Elyos Templar</small></h1>
+            </div>
+            
+            <div class='col-md-7' id='leftSection'></div>
+            <div class='stigma_bg'>
+                <div class='stigma_slot' id='green_1'>
+                    <div class='stigma st' id='green_1_stigma'></div>
+                </div>
+                <div class='stigma_slot' id='green_2'>
+                    <div class='stigma' id='green_2_stigma'></div>
+                </div>
+                <div class='stigma_slot' id='green_3'>
+                    <div class='stigma' id='green_3_stigma'></div>
+                </div>
+                <div class='stigma_slot' id='blue_1'>
+                    <div class='stigma' id='blue_1_stigma'></div>
+                </div>
+                <div class='stigma_slot' id='blue_2'>
+                    <div class='stigma' id='blue_2_stigma'></div>
+                </div>
+                <div class='stigma_slot' id='gold_1'>
+                    <div class='stigma' id='gold_1_stigma' onmouseover='grayFilter(this)'></div>
+                </div>
+                <div class='stigma_slot' id='vision'>
+                    <div class='stigma' id='vision_stigma'></div>
+                </div>
+            </div>
+            
+            <div class='stigma_info'>
+                <div id='gold_info'>
+                    <h4>Empyrean Providence</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Magical - Buff</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Creates a protective shield for 15s that has a 100% chance of blocking damage each time 
+                                <br>
+                                the caster and up to 6 allies within a 30m radius receive all attack. 
+                                <br>
+                                Also increases Stun, Knock Back, Stumble, Spin, and Aether's Hold Resists by 1000. 
+                                <br>
+                                (The Protective Shield absorbs 50% of the damage taken per attack.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>10m</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>404 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.867s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='vision_info'>
+                    <h4>Bloodsucking Punishment</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Physical - Attack</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Inflicts 1272 - 1276 physical damage on a target and absorbs 50% of the damage as HP.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>30s</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>910 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.367s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='blue2_info'>
+                    <h4>Prayer of Victory</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Magical - Buff</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Increases the Maximum HP of you and up to 6 allies within a 30m radius by 1600 for 3m.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>5m</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>282 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.667s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='blue1_info'>
+                    <h4>Prayer of Resilience</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Magical - Heal</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Restores 4797 HP of a target within 25m.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>3m</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>282 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.867s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='green2_info'>
+                    <h4>Elimination Strike</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Physical - Attack</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Inflicts 2015 - 2019 physical damage on the target.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>1m</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>174 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.833s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='green3_info'>
+                    <h4>Inquisitor's Blow</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Physical - Attack</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Deals 869 - 873 physical damage to a target within 15m.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>30s</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>137 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.200s</td>
+                        </tr>
+                    </table>                 
+                </div>
+                <div id='green1_info'>
+                    <h4>Divine Fury</h4>
+
+                    <table class='table'>
+                        <tr>
+                            <th>Type:</th>
+                            <td>Magical - Buff</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>
+                                Physical Attack is increased by 30% for 30s.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cooldown:</th>
+                            <td>3m</td>
+                        </tr>
+                        <tr>
+                            <th>Cost:</th>
+                            <td>86 MP</td>
+                        </tr>
+                        <tr>
+                            <th>Motion Time:</th>
+                            <td>0.867s</td>
+                        </tr>
+                    </table>                 
+                </div>
+            </div>
+            
+            <div class='gearCalc'>
+                <div class='itemSlots'>
+                    <table class='table'>
+                        <th><h4 id='head_left'>Weapon / Armor</h4></th>
+                        <th><h4 id='head_right'>Accesories</h4></th>
+                        <tr>
+                            <td id='weapon'><img class='armor'  src="material/images/Gear/armorWeapon/greatsword.jpg" align='left'>
+                                <span class='armor'>+15 Greatsword of Bygone Atreia</span>
+                            </td>
+                            <td id='head'><img class='accs' src="material/images/Gear/accs/head_mythic.jpg" align='right'>
+                                <span class='accs'>+5 High Guard Praetor's Plate Helm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='torso'><img class='armor'  src="material/images/Gear/armorWeapon/torso.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Breastplate</span>
+                            </td>
+                            <td id='necklace'><img class='accs' src="material/images/Gear/accs/necklace_mythic.jpg" align='right'>
+                                <span class='accs'>+5 High Guard Praetor's War Necklace</span>
+                        </tr>
+                        <tr>
+                            <td id='pants'><img class='armor'  src="material/images/Gear/armorWeapon/pants.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Greaves</span>
+                            </td>
+                            <td id='earring1'><img class='accs' src="material/images/Gear/accs/earring_mythic.jpg" align='right'>
+                                <span class='accs'>+5 High Guard Praetor's War Earring</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='shoulder'><img class='armor'  src="material/images/Gear/armorWeapon/shoulder.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Shoulderplates</span>
+                            </td>
+                            <td id='earring2'><img class='accs' src="material/images/Gear/accs/earring_mythic.jpg" align='right'>
+                                <span class='accs'>+5 High Guard Praetor's War Earring</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='glove'><img class='armor'  src="material/images/Gear/armorWeapon/glove.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Plate Gloves</span>
+                            </td>
+                            <td id='ring1'><img class='accs' src="material/images/Gear/accs/ring_mythic.jpg" align='right'>
+                                <span class='accs'>+7 High Guard Praetor's War Ring</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='shoes'><img class='armor' src="material/images/Gear/armorWeapon/shoes.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Sabatons</span>
+                            </td>
+                            <td id='ring2'><img class='accs' src="material/images/Gear/accs/ring_mythic.jpg" align='right'>
+                                <span class='accs'>+7 High Guard Praetor's War Ring</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='wings'><img class='armor' src="material/images/Gear/accs/wings.jpg" align='left'>
+                                <span class='armor'>+15 High Guard Praetor's Wing of War</span>
+                            </td>
+                            <td id='belt'><img class='accs' src="material/images/Gear/accs/belt_mythic.jpg" align='right'>
+                                <span class='accs'>+5 High Guard Praetor's War Belt</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id='feather'><img class='armor' src="material/images/Gear/accs/feather.jpg" align='left'>
+                                <span class='armor'>+7 Kaisinel´s Enhanced</span>
+                                <br>
+                                <span class='armor'>Feather Attack/Crit Strike</span>
+                            </td>
+                            <td id='bracelet'><img class='accs' src="material/images/Gear/accs/bracelet.jpg" align='right'>
+                                <span class='accs'>+7 Kaisinel´s Bracelet</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class='gear_info'>
+                <div class='left_side info' id='weapon_info'></div>
+                <div class='left_side info' id='torso_info'></div>
+                <div class='left_side info' id='pants_info'></div>
+                <div class='left_side info' id='shoulder_info'></div>
+                <div class='left_side info' id='glove_info'></div>
+                <div class='left_side info' id='shoes_info'></div>
+                <div class='left_side info' id='wings_info'></div>
+                <div class='left_side info' id='feather_info'></div>
+                
+                <div class='right_side info' id='head_info'></div>
+                <div class='right_side info' id='necklace_info'></div>
+                <div class='right_side info' id='earring_info'></div>
+                <div class='right_side info' id='earring_info'></div>
+                <div class='right_side info' id='ring_info'></div>
+                <div class='right_side info' id='ring_info'></div>
+                <div class='right_side info' id='belt_info'></div>
+                <div class='right_side info' id='bracelet_info'></div>
+            </div>
+            
+            <div class="fullscreen-bg" id="fullscreen">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video loop="1" muted="1" autoplay="1" poster="/backgroundVideo.jpg" class="fullscreen-bg_video">
+                        <source src="material/video/BackgroundVideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <footer class='footer'>
+                <p class="text-muted glyphicon glyphicon-copyright-mark">TempDesign</p>
+            </footer>
+        </div>
+
+    
+      
+      
+      
+      
+      
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+                       
+            getInfo('#gold_1_stigma', '.stigma_info', '#gold_info');
+            getInfo('#vision', '.stigma_info', '#vision_info');
+            getInfo('#blue_2_stigma', '.stigma_info', '#blue2_info');
+            getInfo('#blue_1_stigma', '.stigma_info', '#blue1_info');
+            getInfo('#green_3_stigma', '.stigma_info', '#green3_info');
+            getInfo('#green_2_stigma', '.stigma_info', '#green2_info');
+            getInfo('#green_1_stigma', '.stigma_info', '#green1_info');
+            
+            getInfo('#weapon', '.gear_info', '#weapon_info');
+            getInfo('#torso', '.gear_info', '#torso_info');
+            getInfo('#pants', '.gear_info', '#pants_info');
+            getInfo('#shoulder', '.gear_info', '#shoulder_info');
+            getInfo('#glove', '.gear_info', '#glove_info');
+            getInfo('#shoes', '.gear_info', '#shoes_info');
+            getInfo('#wings', '.gear_info', '#wings_info');
+            getInfo('#feather', '.gear_info', '#feather_info');
+            
+            getInfo('#head', '.gear_info', '#head_info');
+            getInfo('#necklace', '.gear_info', '#necklace_info');
+            getInfo('#earring1', '.gear_info', '#earring_info');
+            getInfo('#earring2', '.gear_info', '#earring_info');
+            getInfo('#ring1', '.gear_info', '#ring_info');
+            getInfo('#ring2', '.gear_info', '#ring_info');
+            getInfo('#belt', '.gear_info', '#belt_info');
+            getInfo('#bracelet', '.gear_info', '#bracelet_info');
+            
+
+            
+        </script>
+        
+      
+    </body>
+</html>
